@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#000000" />
   <title>AZ3060G53N</title>
   <style>
     html, body {
@@ -11,27 +13,20 @@
       margin: 0;
       background: #000;
       overflow: hidden;
+      touch-action: manipulation;
     }
-    .wrap {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    /* Ensure the whole image is visible (no cropping) */
     img {
-      max-width: 100vw;
-      max-height: 100vh;
-      width: auto;
-      height: auto;
+      width: 100vw;
+      height: 100vh;
       object-fit: contain;
+      object-position: center center;
       display: block;
+      background: #000;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <img src="AZ3060G53N.jpg" alt="AZ3060G53N" />
-  </div>
+  <img src="AZ3060G53N.png" alt="AZ3060G53N" />
 </body>
 </html>
